@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satan ($S8N) - The Devil's Currency</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom font */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Glassmorphism style */
+        .glass {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            background-color: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast */
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px 0 rgba(255, 69, 0, 0.37); /* Fiery shadow */
+        }
+
+        /* Background animation */
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: radial-gradient(circle at top left, #450a0a, #1c1917 40%, #7f1d1d);
+            background-size: 300% 300%;
+            animation: gradientAnimation 30s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Neon glow effect */
+        .neon-text {
+            text-shadow: 0 0 5px rgba(255, 69, 0, 0.8), 0 0 10px rgba(255, 69, 0, 0.6), 0 0 20px rgba(255, 69, 0, 0.4);
+        }
+
+        /* Hover effects */
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(255, 69, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-fixed bg-[url('https://pbs.twimg.com/profile_images/1880278672222916608/xIG6V6Rn_400x400.jpg')]">
+    
+    <!-- Animated Background -->
+    <div class="gradient-bg"></div>
+
+    <!-- Navigation Menu -->
+    <nav class="glass fixed top-0 left-0 w-full z-50 h-16">
+        <div class="container mx-auto px-4 h-full flex justify-between items-center">
+            <div class="text-white text-lg font-bold flex items-center">
+                <img src="https://pbs.twimg.com/profile_images/1880278672222916608/xIG6V6Rn_400x400.jpg" alt="$S8N Logo" class="w-8 h-8 rounded-full mr-2">
+                Satan ($S8N)
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-white hover:text-red-500 text-sm">Home</a></li>
+                <li><a href="#tokenomics" class="text-white hover:text-red-500 text-sm">Tokenomics</a></li>
+                <li><a href="#roadmap" class="text-white hover:text-red-500 text-sm">Roadmap</a></li>
+                <li><a href="#contact" class="text-white hover:text-red-500 text-sm">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex items-center justify-center h-screen pt-12">
+        <div class="glass max-w-4xl mx-auto px-8 py-16 text-white space-y-8">
+            <h1 class="text-6xl font-extrabold text-red-500 neon-text">Welcome to Hell</h1>
+            <p class="text-xl text-gray-200">The official token of Satan himself. 1 million tokens. No pre-sale. No taxes. Just pure, unadulterated chaos.</p>
+            
+            <div class="flex gap-x-4 mt-6">
+                <a href="https://dexscreener.com/solana/6yxpiBUXLncWQjzZgFbF5SowfAwNa1HRxCD1Ec7fame" target="_blank" class="px-8 py-3 bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-full transition hover:scale-105 hover:shadow-lg">Buy $S8N</a>
+                <button class="px-8 py-3 border border-red-500 text-red-500 rounded-full transition hover:bg-red-500 hover:text-white hover:shadow-lg">Learn More</button>
+            </div>
+
+            <!-- Chain Indicator -->
+            <div class="flex items-center gap-x-2 mt-6">
+                <span class="text-sm bg-black px-3 py-1 rounded-full text-white">Solana</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 text-red-500" aria-label="Solana Icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.271-1.735 3.063-1.735 4.334 0l3.518 4.853a1.14 1.14 0 01-1.586 1.66L12 9.372l-2.653 3.238a1.14 1.14 0 01-1.586-1.66l3.518-4.853z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tweet Section -->
+    <section id="proof" class="py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-red-500 neon-text text-center mb-8">Proof of Authenticity</h2>
+            <div class="glass p-6">
+                <!-- Embed the Tweet -->
+                <blockquote class="twitter-tweet" data-conversation="none">
+                    <a href="https://x.com/AI_Joe_/status/1891597874518995448"></a>
+                </blockquote>
+                <blockquote class="twitter-tweet" data-conversation="none">
+                    <a href="https://x.com/s8n/status/1891598877972725911"></a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="tokenomics" class="py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-red-500 neon-text text-center mb-8">Tokenomics</h2>
+            <div class="grid gap-y-12 lg:grid-cols-3">
+                <div class="glass p-6 flex items-center justify-between rounded-lg transition hover-scale">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-red-500" aria-label="Low Fees Icon">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm0 2c-3.356 0-6.126 2.2-6.874 5.05l-.707.707A1 1 0 0010.5 11v.021l-.29.29a1 1 0 001.415 1.415l.708-.707A4.951 4.951 0 0012 6.5c.356 0 .71.04 1.057.11l.707.707a1 1 0 001.415-1.415L13.415 8H14.5A1 1 0 0014.5 9v2.029l.29.29a1 1 0 001.415-1.415l-.707-.707A4.95 4.95 0 0012 16.5c-2.686 0-4.998-1.893-5.654-4.55l-.707-.707a1 1 0 00-1.415 1.415L10.5 17H9.5a1 1 0 00-1-2V9.5l-.29-.29a1 1 0 000-1.414l.707-.707A4.95 4.95 0 0012 7.5z"/>
+                    </svg>
+                    <div class="flex flex-col justify-between">
+                        <h3 class="text-lg font-medium text-white">1 Million Tokens</h3>
+                        <p class="mt-2 text-gray-300">No more, no less. Hell is exclusive.</p>
+                    </div>
+                </div>
+
+                <div class="glass p-6 flex items-center justify-between rounded-lg transition hover-scale">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-red-500" aria-label="Fair Launch Icon">
+                        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/>
+                        <path d="M12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"/>
+                    </svg>
+                    <div class="flex flex-col justify-between">
+                        <h3 class="text-lg font-medium text-white">Fair Launch</h3>
+                        <p class="mt-2 text-gray-300">No pre-sale. No insider BS. Just chaos.</p>
+                    </div>
+                </div>
+
+                <div class="glass p-6 flex items-center justify-between rounded-lg transition hover-scale">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-red-500" aria-label="No Taxes Icon">
+                        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/>
+                        <path d="M12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"/>
+                    </svg>
+                    <div class="flex flex-col justify-between">
+                        <h3 class="text-lg font-medium text-white">No Taxes</h3>
+                        <p class="mt-2 text-gray-300">Hell doesn’t need your money. We just want chaos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="glass text-center py-6 text-white">
+        <p>&copy; 2025 Satan ($S8N). All rights reserved. Welcome to Hell.</p>
+        <div class="mt-4">
+            <a href="https://x.com/s8n" target="_blank" class="text-white hover:text-red-500 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                Follow us on X.com
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
