@@ -55,6 +55,32 @@
             transform: scale(1.05);
             box-shadow: 0 12px 24px rgba(255, 69, 0, 0.3);
         }
+
+        /* X-style profile */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .profile img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: border-color 0.3s ease;
+        }
+        .profile:hover img {
+            border-color: rgba(255, 69, 0, 0.8);
+        }
+        .profile .name {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: white;
+        }
+        .profile .handle {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
     </style>
 </head>
 
@@ -66,21 +92,26 @@
     <!-- Navigation Menu -->
     <nav class="glass fixed top-0 left-0 w-full z-50 h-16">
         <div class="container mx-auto px-4 h-full flex justify-between items-center">
-            <div class="text-white text-lg font-bold flex items-center">
-                <img src="https://pbs.twimg.com/profile_images/1880278672222916608/xIG6V6Rn_400x400.jpg" alt="$S8N Logo" class="w-8 h-8 rounded-full mr-2">
-                Satan ($S8N)
+            <!-- X-style profile -->
+            <div class="profile">
+                <img src="https://pbs.twimg.com/profile_images/1880278672222916608/xIG6V6Rn_400x400.jpg" alt="$S8N Logo">
+                <div>
+                    <div class="name">Satan</div>
+                    <div class="handle">@s8n</div>
+                </div>
             </div>
             <ul class="flex space-x-6">
                 <li><a href="#home" class="text-white hover:text-red-500 text-sm">Home</a></li>
-                <li><a href="https://dexscreener.com/solana/6yxpiBUXLncWQjzZgFbF5SowfAwNa1HRxCD1Ec7fame" class="text-white hover:text-red-500 text-sm">Buy</a></li>
                 <li><a href="#tokenomics" class="text-white hover:text-red-500 text-sm">Tokenomics</a></li>
+                <li><a href="#roadmap" class="text-white hover:text-red-500 text-sm">Roadmap</a></li>
+                <li><a href="#contact" class="text-white hover:text-red-500 text-sm">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="flex items-center justify-center min-h-screen pt-24 pb-16">
-        <div class="glass max-w-4xl mx-auto px-8 py-16 text-white text-center space-y-8"> <!-- Centered text -->
+        <div class="glass max-w-4xl mx-auto px-8 py-16 text-white text-center space-y-8">
             <h1 class="text-6xl font-extrabold text-red-500 neon-text">Welcome to Hell</h1>
             <p class="text-xl text-gray-200">The official token of Satan himself. 1 million tokens. No pre-sale. No taxes. Just pure, unadulterated chaos.</p>
             
@@ -93,13 +124,13 @@
             </div>
 
             <!-- Buttons -->
-            <div class="flex justify-center gap-x-4 mt-6"> <!-- Centered buttons -->
+            <div class="flex justify-center gap-x-4 mt-6">
                 <a href="https://dexscreener.com/solana/6yxpiBUXLncWQjzZgFbF5SowfAwNa1HRxCD1Ec7fame" target="_blank" class="px-8 py-3 bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-full transition hover:scale-105 hover:shadow-lg">Buy $S8N</a>
                 <button class="px-8 py-3 border border-red-500 text-red-500 rounded-full transition hover:bg-red-500 hover:text-white hover:shadow-lg">Learn More</button>
             </div>
 
             <!-- Chain Indicator -->
-            <div class="flex justify-center items-center gap-x-2 mt-6"> <!-- Centered chain indicator -->
+            <div class="flex justify-center items-center gap-x-2 mt-6">
                 <span class="text-sm bg-black px-3 py-1 rounded-full text-white">Solana</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 text-red-500" aria-label="Solana Icon">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.271-1.735 3.063-1.735 4.334 0l3.518 4.853a1.14 1.14 0 01-1.586 1.66L12 9.372l-2.653 3.238a1.14 1.14 0 01-1.586-1.66l3.518-4.853z"/>
@@ -113,7 +144,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-red-500 neon-text text-center mb-8">Tokenomics</h2>
             <div class="grid gap-y-12 lg:grid-cols-3">
-                <div class="glass p-6 flex flex-col items-center text-center rounded-lg transition hover-scale"> <!-- Centered feature block -->
+                <div class="glass p-6 flex flex-col items-center text-center rounded-lg transition hover-scale">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-red-500" aria-label="Low Fees Icon">
                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm0 2c-3.356 0-6.126 2.2-6.874 5.05l-.707.707A1 1 0 0010.5 11v.021l-.29.29a1 1 0 001.415 1.415l.708-.707A4.951 4.951 0 0012 6.5c.356 0 .71.04 1.057.11l.707.707a1 1 0 001.415-1.415L13.415 8H14.5A1 1 0 0014.5 9v2.029l.29.29a1 1 0 001.415-1.415l-.707-.707A4.95 4.95 0 0012 16.5c-2.686 0-4.998-1.893-5.654-4.55l-.707-.707a1 1 0 00-1.415 1.415L10.5 17H9.5a1 1 0 00-1-2V9.5l-.29-.29a1 1 0 000-1.414l.707-.707A4.95 4.95 0 0012 7.5z"/>
                     </svg>
@@ -123,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="glass p-6 flex flex-col items-center text-center rounded-lg transition hover-scale"> <!-- Centered feature block -->
+                <div class="glass p-6 flex flex-col items-center text-center rounded-lg transition hover-scale">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-red-500" aria-label="Fair Launch Icon">
                         <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/>
                         <path d="M12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"/>
@@ -134,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="glass p-6 flex flex-col items-center text-center rounded-lg transition hover-scale"> <!-- Centered feature block -->
+                <div class="glass p-6 flex flex-col items-center text-center rounded-lg transition hover-scale">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-red-500" aria-label="No Taxes Icon">
                         <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/>
                         <path d="M12 6a6 6 0 100 12 6 6 0 000-12zm0 10a4 4 0 110-8 4 4 0 010 8z"/>
