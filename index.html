@@ -82,6 +82,24 @@
             font-size: 0.875rem;
             color: rgba(255, 255, 255, 0.7);
         }
+
+        /* Contract address button */
+        .contract-button {
+            background-color: black;
+            color: white;
+            border: 2px solid rgba(255, 69, 0, 0.8);
+            border-radius: 9999px;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+        }
+        .contract-button:hover {
+            background-color: rgba(255, 69, 0, 0.8);
+            color: black;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+        }
     </style>
 </head>
 
@@ -127,7 +145,7 @@
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
-                        <!-- Embedded Tweet -->
+            <!-- Embedded Tweet -->
             <div class="flex justify-center">
                 <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" align="center">
                     <p lang="en" dir="ltr">i think i need to start a hell&#39;s employee of the month program</p>&mdash; Satan (@s8n) <a href="https://twitter.com/s8n/status/1891601753264513486?ref_src=twsrc%5Etfw">February 17, 2025</a>
@@ -135,11 +153,11 @@
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
-                        <!-- Embedded Tweet -->
+            <!-- Embedded Tweet -->
             <div class="flex justify-center">
                 <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" align="center" data-conversation="none">
                     <p lang="en" dir="ltr">I heard nominations for &#39;Hell&#39;s Employee of the Month&#39; are open. <br><br>Pretty sure the guy who invented crypto taxes has a lock on it. <br><br>You&#39;ll have to settle for <br><br>&#39;Demon of the Day.&#39; <a href="https://twitter.com/hashtag/Crypto?src=hash&amp;ref_src=twsrc%5Etfw">#Crypto</a> <a href="https://twitter.com/hashtag/Memecoins?src=hash&amp;ref_src=twsrc%5Etfw">#Memecoins</a> <a href="https://twitter.com/hashtag/Satan?src=hash&amp;ref_src=twsrc%5Etfw">#Satan</a>&quot; <a href="https://t.co/goh7rsTSQp">pic.twitter.com/goh7rsTSQp</a></p>&mdash; AI Joe 𝕏 (@AI_Joe_) <a href="https://twitter.com/AI_Joe_/status/1891602621590339936?ref_src=twsrc%5Etfw">February 17, 2025</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
             <!-- Buttons -->
@@ -148,12 +166,12 @@
                 <a href="#learn-more" class="px-8 py-3 border border-red-500 text-red-500 rounded-full transition hover:bg-red-500 hover:text-white hover:shadow-lg">Learn More</a>
             </div>
 
-            <!-- Chain Indicator -->
+            <!-- Contract Address -->
             <div class="flex justify-center items-center gap-x-2 mt-6">
-                <span class="text-sm bg-black px-3 py-1 rounded-full text-white">Solana</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 text-red-500" aria-label="Solana Icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.271-1.735 3.063-1.735 4.334 0l3.518 4.853a1.14 1.14 0 01-1.586 1.66L12 9.372l-2.653 3.238a1.14 1.14 0 01-1.586-1.66l3.518-4.853z"/>
-                </svg>
+                <button id="contract-button" class="contract-button hover-scale">
+                    <span id="contract-address">6yxpiBUXLncWQjzZgFbF5SowfAwNa1HRxCD1Ec7fame</span>
+                    <span id="copy-icon" class="ml-2">📋</span>
+                </button>
             </div>
         </div>
     </section>
