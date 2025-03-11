@@ -25,23 +25,22 @@
             box-shadow: 0 8px 32px 0 rgba(255, 69, 0, 0.37); /* Fiery shadow */
         }
 
-        /* Enhanced background animation */
-        .gradient-bg {
+        /* Video background container */
+        .video-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(-45deg, #450a0a, #1c1917, #7f1d1d, #450a0a);
-            background-size: 400% 400%;
-            animation: gradientAnimation 15s ease infinite;
+            overflow: hidden;
         }
 
-        @keyframes gradientAnimation {
-            0% {background-position: 0% 50%;}
-            50% {background-position: 100% 50%;}
-            100% {background-position: 0% 50%;}
+        /* Video styling */
+        .video-bg video {
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
         }
 
         /* Neon glow effect */
@@ -86,10 +85,14 @@
     </style>
 </head>
 
-<body class="bg-fixed bg-[url('https://pbs.twimg.com/profile_images/1880278672222916608/xIG6V6Rn_400x400.jpg')]">
-    
-    <!-- Animated Background -->
-    <div class="gradient-bg"></div>
+<body>
+    <!-- Video Background -->
+    <div class="video-bg">
+        <video autoplay muted loop>
+            <source src="s8nbackground.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
     <!-- Navigation Menu -->
     <nav class="glass fixed top-0 left-0 w-full z-50 h-16">
