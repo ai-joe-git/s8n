@@ -88,7 +88,7 @@
 <body>
     <!-- Video Background -->
     <div class="video-bg">
-        <video id="background-video" autoplay muted>
+        <video id="background-video" autoplay muted loop>
             <source src="s8nbackground.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -226,16 +226,17 @@
         // Function to play the video in reverse
         function playReverse() {
             video.playbackRate = -1; // Reverse speed
+            video.currentTime = video.duration; // Start from the end
             video.play();
         }
 
-        // Event listener for when the video ends
+        // Event listener for when the video ends (forward playback)
         video.addEventListener('ended', () => {
             playReverse(); // Play in reverse after finishing forward
         });
 
-        // Event listener for when the video reaches the start (when playing in reverse)
-        video.addEventListener('seeked', () => {
+        // Event listener for when the video reaches the start (reverse playback)
+        video.addEventListener('timeupdate', () => {
             if (video.playbackRate === -1 && video.currentTime <= 0) {
                 playForward(); // Play forward after finishing reverse
             }
