@@ -88,7 +88,7 @@
 <body>
     <!-- Video Background -->
     <div class="video-bg">
-        <video autoplay muted loop>
+        <video id="background-video" autoplay muted>
             <source src="s8nbackground.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -212,5 +212,37 @@
             </a>
         </div>
     </footer>
+
+    <!-- JavaScript for Forward and Reverse Loop -->
+    <script>
+        const video = document.getElementById('background-video');
+
+        // Function to play the video forward
+        function playForward() {
+            video.playbackRate = 1; // Normal speed
+            video.play();
+        }
+
+        // Function to play the video in reverse
+        function playReverse() {
+            video.playbackRate = -1; // Reverse speed
+            video.play();
+        }
+
+        // Event listener for when the video ends
+        video.addEventListener('ended', () => {
+            playReverse(); // Play in reverse after finishing forward
+        });
+
+        // Event listener for when the video reaches the start (when playing in reverse)
+        video.addEventListener('seeked', () => {
+            if (video.playbackRate === -1 && video.currentTime <= 0) {
+                playForward(); // Play forward after finishing reverse
+            }
+        });
+
+        // Start playing forward initially
+        playForward();
+    </script>
 </body>
 </html>
