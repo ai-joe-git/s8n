@@ -6,8 +6,6 @@
     <title>Satan ($S8N) - The Devil's Currency</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1880278672222916608/xIG6V6Rn_400x400.jpg">
     
     <style>
         /* Custom font */
@@ -25,22 +23,23 @@
             box-shadow: 0 8px 32px 0 rgba(255, 69, 0, 0.37); /* Fiery shadow */
         }
 
-        /* Video background container */
-        .video-bg {
+        /* Enhanced background animation */
+        .gradient-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
-            overflow: hidden;
+            background: linear-gradient(-45deg, #450a0a, #1c1917, #7f1d1d, #450a0a);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
         }
 
-        /* Video styling */
-        .video-bg video {
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
         }
 
         /* Neon glow effect */
@@ -57,6 +56,27 @@
             box-shadow: 0 12px 24px rgba(255, 69, 0, 0.3);
         }
 
+        /* Contract address button */
+        .contract-button {
+            background-color: black;
+            color: white;
+            border: 2px solid rgba(255, 69, 0, 0.8);
+            border-radius: 9999px;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+            transition: all 0.3s ease;
+        }
+        .contract-button:hover {
+            box-shadow: 0 0 20px rgba(255, 69, 0, 1);
+            transform: scale(1.05);
+        }
+        .contract-button:active {
+            transform: scale(0.95);
+        }
+
         /* X-style profile */
         .profile {
             display: flex;
@@ -64,8 +84,8 @@
             gap: 0.75rem;
         }
         .profile img {
-            width: 3.5rem; /* Increased size */
-            height: 3.5rem; /* Increased size */
+            width: 2.5rem;
+            height: 2.5rem;
             border-radius: 50%;
             border: 2px solid rgba(255, 255, 255, 0.2);
             transition: border-color 0.3s ease;
@@ -75,7 +95,7 @@
         }
         .profile .name {
             font-weight: 700;
-            font-size: 1.25rem; /* Slightly larger */
+            font-size: 1.125rem;
             color: white;
         }
         .profile .handle {
@@ -85,14 +105,10 @@
     </style>
 </head>
 
-<body>
-    <!-- Video Background -->
-    <div class="video-bg">
-        <video id="background-video" autoplay muted loop>
-            <source src="s8nbackground.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+<body class="bg-fixed bg-[url('https://pbs.twimg.com/profile_images/1880278672222916608/xIG6V6Rn_400x400.jpg')]">
+    
+    <!-- Animated Background -->
+    <div class="gradient-bg"></div>
 
     <!-- Navigation Menu -->
     <nav class="glass fixed top-0 left-0 w-full z-50 h-16">
@@ -127,33 +143,20 @@
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
-                        <!-- Embedded Tweet -->
-            <div class="flex justify-center">
-                <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" align="center">
-                    <p lang="en" dir="ltr">i think i need to start a hell&#39;s employee of the month program</p>&mdash; Satan (@s8n) <a href="https://twitter.com/s8n/status/1891601753264513486?ref_src=twsrc%5Etfw">February 17, 2025</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
-                        <!-- Embedded Tweet -->
-            <div class="flex justify-center">
-                <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" align="center" data-conversation="none">
-                    <p lang="en" dir="ltr">I heard nominations for &#39;Hell&#39;s Employee of the Month&#39; are open. <br><br>Pretty sure the guy who invented crypto taxes has a lock on it. <br><br>You&#39;ll have to settle for <br><br>&#39;Demon of the Day.&#39; <a href="https://twitter.com/hashtag/Crypto?src=hash&amp;ref_src=twsrc%5Etfw">#Crypto</a> <a href="https://twitter.com/hashtag/Memecoins?src=hash&amp;ref_src=twsrc%5Etfw">#Memecoins</a> <a href="https://twitter.com/hashtag/Satan?src=hash&amp;ref_src=twsrc%5Etfw">#Satan</a>&quot; <a href="https://t.co/goh7rsTSQp">pic.twitter.com/goh7rsTSQp</a></p>&mdash; AI Joe 𝕏 (@AI_Joe_) <a href="https://twitter.com/AI_Joe_/status/1891602621590339936?ref_src=twsrc%5Etfw">February 17, 2025</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
             <!-- Buttons -->
             <div class="flex justify-center gap-x-4 mt-6">
                 <a href="https://dexscreener.com/solana/6yxpiBUXLncWQjzZgFbF5SowfAwNa1HRxCD1Ec7fame" target="_blank" class="px-8 py-3 bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-full transition hover:scale-105 hover:shadow-lg">Buy $S8N</a>
                 <a href="#learn-more" class="px-8 py-3 border border-red-500 text-red-500 rounded-full transition hover:bg-red-500 hover:text-white hover:shadow-lg">Learn More</a>
             </div>
 
-            <!-- Chain Indicator -->
+            <!-- Contract Address Button -->
             <div class="flex justify-center items-center gap-x-2 mt-6">
-                <span class="text-sm bg-black px-3 py-1 rounded-full text-white">Solana</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 text-red-500" aria-label="Solana Icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.271-1.735 3.063-1.735 4.334 0l3.518 4.853a1.14 1.14 0 01-1.586 1.66L12 9.372l-2.653 3.238a1.14 1.14 0 01-1.586-1.66l3.518-4.853z"/>
-                </svg>
+                <button class="contract-button hover-scale" onclick="copyContractAddress()">
+                    <span id="contract-address">6yxpiBUXLncWQjzZgFbF5SowfAwNa1HRxCD1Ec7fame</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                        <path d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2z"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -228,37 +231,14 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Forward and Reverse Loop -->
+    <!-- Copy Contract Address Script -->
     <script>
-        const video = document.getElementById('background-video');
-
-        // Function to play the video forward
-        function playForward() {
-            video.playbackRate = 1; // Normal speed
-            video.play();
+        function copyContractAddress() {
+            const contractAddress = document.getElementById('contract-address').innerText;
+            navigator.clipboard.writeText(contractAddress).then(() => {
+                alert('Contract address copied to clipboard!');
+            });
         }
-
-        // Function to play the video in reverse
-        function playReverse() {
-            video.playbackRate = -1; // Reverse speed
-            video.currentTime = video.duration; // Start from the end
-            video.play();
-        }
-
-        // Event listener for when the video ends (forward playback)
-        video.addEventListener('ended', () => {
-            playReverse(); // Play in reverse after finishing forward
-        });
-
-        // Event listener for when the video reaches the start (reverse playback)
-        video.addEventListener('timeupdate', () => {
-            if (video.playbackRate === -1 && video.currentTime <= 0) {
-                playForward(); // Play forward after finishing reverse
-            }
-        });
-
-        // Start playing forward initially
-        playForward();
     </script>
 </body>
 </html>
